@@ -1,0 +1,108 @@
+body {
+    cursor: -webkit-grabbing;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    position: absolute;
+    top: 400px;
+    left: 90px;
+    color: rgb(63, 216, 71);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+#date {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    border: rgb(122, 16, 16) solid 1px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.stopWatch {
+    color: gold;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.ms {
+    position: absolute;
+    top: 50px;
+    right: 390px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button {
+    margin: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        top: 400px;
+        left: 90px;
+        font-size: 40px;
+    }
+    #date {
+        font-size: 15px;
+    }
+    .container {
+        top: 30px;
+        left: 130px;
+    }
+    .stopWatch {
+        font-size: 60px;
+    }
+    .ms {
+        top: 41px;
+        right: 240px;
+        font-size: 23px;
+    }
+    button {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        top: 400px;
+        left: 8px;
+        font-size: 22px;
+    }
+    #date {
+        font-size: 12px;
+    }
+    .container {
+        top: 30px;
+        left: 0px;
+        border: none;
+    }
+    .stopWatch {
+        font-size: 40px;
+    }
+    .ms {
+        top: 40px;
+        right: 120px;
+        font-size: 23px;
+    }
+    button {
+        margin: 3px;
+    }
+}

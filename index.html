@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>2022/1/1</title>
+</head>
+
+<body>
+    <script src="three.min.js"></script>
+    <script src="OrbitControls.js"></script>
+    <h1>Be the best version of yourself. <br> Wishing every one a very Happy New Year 2022.</h1>
+    <div class="container">
+        <p id="date"></p>
+
+        <script>
+            var today = new Date();
+            // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate() + '-';
+            var now = new Date()
+                .toLocaleTimeString([], {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: true
+                })
+                .toLowerCase();
+            document.getElementById("date").innerHTML = today + ' - ' + now;
+        </script>
+        <div class="stopWatch">00:00:00</div>
+        <div class="ms">000</div>
+        <div class="line"></div>
+        <div>
+            <button type="button" class="btn btn-success startButton">Start</button>
+            <button type="button" class="btn btn-success pauseButton">Pause</button>
+            <button type="button" class="btn btn-success continueButton">Continue</button>
+            <button type="button" class="btn btn-success restartButton">Restart</button>
+        </div>
+    </div>
+    <script src="stopwatch.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
