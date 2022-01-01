@@ -93,16 +93,17 @@ button {
         top: 30px;
         left: 0px;
         border: none;
+        margin: 0;
     }
     .stopWatch {
         font-size: 40px;
     }
     .ms {
-        top: 40px;
-        right: 120px;
-        font-size: 23px;
+        top: 42px;
+        right: 100px;
+        font-size: 18px;
     }
     button {
-        margin: 3px;
+        margin: 0px;
     }
 }
